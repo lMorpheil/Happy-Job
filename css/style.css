@@ -1,0 +1,346 @@
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local('Gotham Pro Bold'), local('GothamPro-Bold'),
+      url('/fonts/GothamPro-Bold.woff2') format('woff2'),
+      url('/fonts/GothamPro-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local('Gotham Pro Light'), local('GothamPro-Light'),
+      url('/fonts/GothamPro-Light.woff2') format('woff2'),
+      url('/fonts/GothamPro-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local('Gotham Pro Black'), local('GothamPro-Black'),
+      url('/fonts/GothamPro-Black.woff2') format('woff2'),
+      url('/fonts/GothamPro-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local('Gotham Pro Italic'), local('GothamPro-Italic'),
+      url('/fonts/GothamPro-Italic.woff2') format('woff2'),
+      url('/fonts/GothamPro-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local('Gotham Pro Medium'), local('GothamPro-Medium'),
+      url('/fonts/GothamPro-Medium.woff2') format('woff2'),
+      url('/fonts/GothamPro-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local('Gotham Pro Bold Italic'), local('GothamPro-BoldItalic'),
+      url('/fonts/GothamPro-BoldItalic.woff2') format('woff2'),
+      url('/fonts/GothamPro-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local('Gotham Pro'), local('GothamPro'),
+      url('/fonts/GothamPro.woff2') format('woff2'),
+      url('/fonts/GothamPro.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local('Gotham Pro Medium Italic'), local('GothamPro-MediumItalic'),
+      url('/fonts/GothamPro-MediumItalic.woff2') format('woff2'),
+      url('/fonts/GothamPro-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local('Gotham Pro Light Italic'), local('GothamPro-LightItalic'),
+      url('/fonts/GothamPro-LightItalic.woff2') format('woff2'),
+      url('/fonts/GothamPro-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.wrapp {
+  margin: 0 auto;
+  padding-top: 40px;
+  width: 300px;
+}
+.card {
+  display: flex;
+  justify-content: center;
+}
+.connection {
+  padding-top: 120px;
+  padding-right: 5px;
+}
+.connection__line-up {
+  width: 24px;
+  height: 203px;
+  border-top: 1px solid #b1b1b1;
+  border-left: 1px solid #b1b1b1;
+  border-top-left-radius: 10px;
+}
+.connection__line-up::after {
+  content: "";
+  padding-bottom: 168px;
+  padding-left: 15px;
+  border-bottom: 1px solid #b1b1b1;
+}
+.connection__crosshair {
+  width: 25px;
+  height: 15px;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  border-left: 1px solid #b1b1b1;
+  position: relative;
+}
+.connection__crosshair::after {
+  content: "";
+  padding-left: 14px;
+  border-top: 1px solid #b1b1b1;
+  position: absolute;
+  top: 7px;
+  left: -7px;
+}
+.connection__line-down {
+  width: 10px;
+  height: 15px;
+  border-bottom: 1px solid #b1b1b1;
+  border-left: 1px solid #b1b1b1;
+  border-bottom-left-radius: 5px;
+}
+.graphics__wrapp {
+  position: relative;
+  content: "";
+  height: 50px;
+}
+.graphics__diagram {
+  position: absolute;
+  top: -17px;
+  left: -5px;
+}
+.card {
+  width: 266px;
+}
+.graphics {
+  padding-bottom: 89px;
+}
+.graphics__description {
+  width: 160px;
+  height: 155px;
+  margin: 0 auto;
+  text-align: center;
+}
+.graphics__percent {
+  display: flex;
+  justify-content: center;
+}
+.graphics__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50px;
+}
+.graphics__digit {
+  font-size: 48px;
+  font-family: "Gotham Pro", sans-serif;
+  font-weight: normal;
+  letter-spacing: -4px;
+}
+.graphics__sup {
+  font-size: 18px;
+  font-family: "Gotham Pro", sans-serif;
+  font-weight: normal;
+  color: grey;
+  padding-top: 3px;
+}
+.graphics__sub {
+  font-size: 23px;
+  font-family: "Gotham Pro", sans-serif;
+  font-weight: normal;
+}
+.graphics__title {
+  font-family: "Gotham Pro", sans-serif;
+  font-size: 20px;
+}
+.graphics__subtitle {
+  font-size: 16px;
+  font-family: "Gotham Pro", sans-serif;
+  color: #fcd329;
+  width: 155px;
+  padding-right: 17px;
+  padding-bottom: 3px;
+}
+.graphics__text {
+  font-family: "Gotham Pro", sans-serif;
+  font-weight: normal;
+  font-size: 10px;
+  color: grey;
+  width: 143px;
+}
+.graphics__indication {
+  display: flex;
+  justify-content: center;
+}
+.graphics__indicator {
+  width: 0; height: 0;
+  border: 10px solid;
+  border-color: white white #70a84b white;
+  padding-bottom: 5px;
+}
+.graphics__index {
+  color: #70a84b;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  align-self: flex-end;
+  padding-top: 10px;
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+  width: 229px;
+  padding-bottom: 14px;
+}
+.details__description {
+  width: 127px;
+}
+.details__title {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2px;
+}
+.details__person {
+  background: url(/images/human_full.svg) center right no-repeat;
+  background-size: 12px 12px;
+  opacity: 0.4;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  padding-right: 15px;
+  padding-top: 4px;
+  text-align: right;
+}
+.details__graphics {
+  display: flex;
+  justify-content: space-between;
+  background: #f9f9f9;
+  border: 1px solid #ececec;
+  border-radius: 4px;
+  width: 90px;
+  height: 34px;
+  padding-right: 4px;
+  overflow: hidden;
+}
+.details__new-statistics {
+  height: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+.details__old-statistics {
+  height: 7px;
+}
+.details__new-statistics_color_green {
+  background: rgba(112,167,75,1);
+  animation: resize-new-color-green 5s ease-in-out forwards;
+  -webkit-animation: resize-new-color-green 5s ease-in-out forwards;
+}
+.details__old-statistics_color_green {
+  background: rgba(181,208,162,1);
+  animation: resize-old-color-green 5s ease-in-out forwards;
+  -webkit-animation: resize-old-color-green 5s ease-in-out forwards;
+}
+.details__new-statistics_color_yellow {
+  background: rgba(251,210,41,1);
+  animation: resize-new-color-yellow 5s ease-in-out forwards;
+  -webkit-animation: resize-new-color-yellow 5s ease-in-out forwards;
+}
+.details__old-statistics_color_yellow {
+  background: rgba(250,230,145,1);
+  animation: resize-old-color-yellow 5s ease-in-out forwards;
+  -webkit-animation: resize-old-color-yellow 5s ease-in-out forwards;
+}
+.details__new-statistics_color_red {
+  background: rgba(237,82,67,1);
+  animation: resize-new-color-red 5s ease-in-out forwards;
+  -webkit-animation: resize-new-color-red 5s ease-in-out forwards;
+}
+.details__old-statistics_color_red {
+  background:rgba(243,166,158,1);
+  animation: resize-old-color-red 5s ease-in-out forwards;
+  -webkit-animation: resize-old-color-red 5s ease-in-out forwards;
+}
+.details__delta {
+  align-self: center;
+  font-weight: normal;
+}
+
+@keyframes resize-new-color-green {
+  from {
+    width: 0;
+  }
+  to {
+    width: 32px;
+  }
+}
+@keyframes resize-old-color-green {
+  from {
+    width: 0;
+  }
+  to {
+    width: 30px;
+  }
+}
+@keyframes resize-new-color-yellow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 33px;
+  }
+}
+@keyframes resize-old-color-yellow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 29px;
+  }
+}
+@keyframes resize-new-color-red {
+  from {
+    width: 0;
+  }
+  to {
+    width: 27px;
+  }
+}
+@keyframes resize-old-color-red {
+  from {
+    width: 0;
+  }
+  to {
+    width: 32px;
+  }
+}
